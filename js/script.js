@@ -65,14 +65,11 @@ const userStudent = {
     "nome": userStudentName,
     "cognome": userStudentLastName,
     "eta": userStudentAge
-}
+};
 
 students.push(userStudent);
 
 for ( let i = 0; i < students.length; i++ ) {
     thisStudent = students[i];
-    
-    for ( let key in thisStudent ) {
-        console.log( key + ":" + thisStudent[key]);
-    }
+    console.log( thisStudent.nome + " " + thisStudent.cognome );
 }
